@@ -17,9 +17,6 @@ crosarot = colorant"rgb(237,196,196)"
 # Some Randomness
 Random.seed!(42)
 
-#cd()
-#cd("/Users/tc/OneDrive - Conring Frisius/Dan")
-
 # Cycle inputs via excel sheet for constructed portfolio
 fund = convert(Array{Int,2},replace(XLSX.readdata("Cycle_inputs.xlsx","Input!C4:AT18"), missing=>0))
 prob = convert(Array{Float32,2},replace(XLSX.readdata("Cycle_inputs.xlsx","Input!C30:AT103"), missing=>0))
